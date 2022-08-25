@@ -1,0 +1,14 @@
+/*
+@theme dark
+*/
+
+@import 'light';
+
+:root {
+  --color-body-text: var(--color-neutral-0);
+  --color-body-bg: var(--color-neutral-90);
+  --color-card-bg: var(--color-neutral-95);
+  --color-overlay-bg: rgba(20, 20, 20, .95);
+  --color-border-light: var(--color-neutral-80);
+  --color-border-medium: var(--color-neutral-75);
+}

@@ -1,0 +1,113 @@
+/*
+@theme light
+
+Base: https://github.com/marp-team/marp-core/blob/main/themes/default.scss
+*/
+
+@import 'default';
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url('./fonts/inconsolata-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  src: url('./fonts/inconsolata-700.woff2') format('woff2');
+}
+
+:root {
+  --color-neutral-0: #fff;
+  --color-neutral-10: #f2f2f2;
+  --color-neutral-25: #d2d2d2;
+  --color-neutral-50: #888;
+  --color-neutral-75: #555;
+  --color-neutral-80: #333;
+  --color-neutral-90: #222;
+  --color-neutral-95: #1B1B1B;
+
+  --color-border-light: var(--color-neutral-10);
+  --color-border-medium: var(--color-neutral-25);
+
+  --color-overlay-bg: rgba(230, 230, 230, .95);
+  --color-body-text: var(--color-neutral-90);
+  --color-body-bg: var(--color-neutral-0);
+  --color-card-bg: var(--color-neutral-10);
+  --color-accent: #f7931a;
+  --color-accent-highlight: #dd7901;
+  --color-secondary: var(--color-neutral-50);
+
+  --font-family-base: 'Inconsolata', monospace;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+section {
+  /* Marp overrides */
+  --h1-color: var(--color-secondary);
+  --heading-strong-color: var(--color-secondary);
+  --paginate-color: var(--color-secondary);
+  --color-border-default: var(--color-border-medium);
+
+  --color-fg-default: var(--color-body-text);
+  --color-fg-muted: var(--color-secondary);
+  --color-fg-subtle: var(--color-secondary);
+  --color-canvas-default: var(--color-body-bg);
+  --color-canvas-subtle: var(--color-card-bg);
+  --color-border-default: var(--color-border-medium);
+  --color-border-muted: var(--color-border-light);
+  --color-neutral-muted: var(--color-border-light);
+  --color-accent-fg: var(--color-accent);
+  --color-accent-emphasis: var(--color-accent);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-base);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-accent-highlight);
+}
+
+header,
+footer {
+  color: var(--color-secondary);
+  background-color: var(--color-card-bg);
+  padding: .5rem 78.5px;
+  left: 0;
+  right: 0
+}
+
+header {
+  top: 0
+}
+
+footer {
+  bottom: 0
+}
+
+pre {
+  font-family: var(--font-family-base);
+  color: var(--color-body-text);
+  background-color: var(--color-card-bg);
+  border: none;
+}
+
+img {
+  background-color: var(--color-body-bg);
+}

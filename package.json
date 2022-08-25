@@ -1,0 +1,14 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "Slides",
+  "main": "marp.config.js",
+  "author": "d11n",
+  "license": "MIT",
+  "scripts": {
+    "start": "marp -ps ."
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "2.1.2"
+  }
+}
